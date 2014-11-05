@@ -1,5 +1,5 @@
 body,ul,li,h1,h2,h3,h4,img{margin:0;padding:0;font-size:100%;}
-body{font:normal 14px/1.2em arial;}
+body{font-family:arial;font-size:14px;}
 li{list-style:none;}
 a{text-decoration:none;color:inherit;}
 
@@ -42,6 +42,7 @@ a{text-decoration:none;color:inherit;}
 .ft26{font-size:26px;}
 .ft28{font-size:28px;}
 .ft30{font-size:30px;}
+.ft60{font-size:60px;}
 
 
 

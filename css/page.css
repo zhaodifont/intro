@@ -33,7 +33,7 @@
 	100%{left:100%;}
 }
 @-webkit-keyframes movefar{
-	0%{right:0%;}
+	0%{right:0%}
 	100%{right:100%;}
 }
 

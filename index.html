@@ -1,0 +1,69 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	<title>zhaodifont</title>
+	<meta charset="uft-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" >
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/page.css">
+	<script src="js/starMove.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1 class="bg_514 fl_l pos_ab row20"><a href="javascript:void(0)"><img src="img/zd_logo.png" alt=""></a></h1>
+		<div class="nav pos_ab bg_514 row80" id="nav">
+			<div class="handle fl_r">
+				<span class="ft ft_recart ft_fff ft26" style="top:42px"></span>
+			</div>
+			<div class="fl_r pos_re" id="add_icon">
+				<!-- <div class="lit_a"></div> -->
+				<ul>
+					<li><a href="javascript:void(0)">HOME</a></li>
+					<li><a href="javascript:void(0)">ABOUT ME</a></li>
+					<li><a href="javascript:void(0)">SOME</a></li>
+					<li><a href="javascript:void(0)">OTHER</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container boxs">
+		<div class="cloud_near"><img src="img/clouds-near.png" alt="" /></div>
+		<div class="cloud_far"><img src="img/clouds-far.png" alt="" /></div>
+		<div class="fence"></div>
+		<div class="tree"></div>
+		<div class="bush1"></div>
+		<div class="bush2"></div>
+		<div class="birdsa"><div class="bordsa_a"></div></div>
+	</div>
+</body>
+<script>
+function add_navicon(obj){ // 目前为id
+	this.obj = obj;
+	this.aLis = this.obj?this.obj.getElementsByTagName('li'):console.log('请输入有效节点');
+}
+add_navicon.prototype.init = function(){
+	this.addHanles_li();
+}
+add_navicon.prototype.addHanles_li = function(){
+	var _this = this;
+	var icon =document.createElement('div');
+	icon.className="lit_a";
+	this.obj.insertBefore(icon,this.obj.firstChild);
+	/*init style*/
+	icon.style.left = this.aLis[0].offsetLeft + parseInt(this.aLis[0].clientWidth/2) -icon.offsetWidth/2+ "px";
+	this.aLis[0].getElementsByTagName('a')[0].style.color = "#ffe40f";
+
+	for (var i = 0; i < this.aLis.length; i++) {
+		this.aLis[i].onmouseover=function(){
+			starMove(icon,{left:this.offsetLeft + parseInt(this.clientWidth/2) -icon.offsetWidth/2});
+			for(var o=0;o<_this.aLis.length;o++){
+				_this.aLis[o].getElementsByTagName('a')[0].style.color = "#fff";
+			}
+			this.getElementsByTagName('a')[0].style.color = "#ffe40f";
+		}
+	};
+}
+new add_navicon($('add_icon')).init();
+</script>
+</html>

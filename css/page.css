@@ -1,7 +1,7 @@
 
 
 
-.header{position:relative;width:100%;height:105px;z-index:14;top:0;overflow:hidden;}
+.header{position:absolute;width:100%;height:105px;z-index:14;top:0;right:0;overflow:hidden;}
 .header h1{left:0;top:0;height:105px;}
 .nav{top:0;right:0;}
 .nav ul{height:105px;margin-right:2em;overflow:hidden;}
@@ -11,24 +11,38 @@
 .handle{border-left:1px solid #675f5d;height:105px;line-height:105px;padding:0 30px;color:#fff;cursor:pointer;}
 .lit_a{width:12px;height:8px;background:url(../img/lit_a.png) center bottom no-repeat;background-size:100%;position:absolute;bottom:0;left:0;}
 
-.container{height:660px;width:100%;overflow:hidden;position:absolute;z-index:13;top:0;background:-webkit-linear-gradient(top,#9CCECE 60%,#E7F7F7)}
-.cloud_near{position:absolute;z-index:12;-webkit-animation:movenear 50s linear infinite;}
-.cloud_far{position:absolute;z-index:11;-webkit-animation:movefar 70s linear infinite;}
+.container{height:660px;width:100%;overflow:hidden;position:absolute;z-index:13;top:0;
+	background:-webkit-linear-gradient(top,#9CCECE 60%,#E7F7F7);
+	background:-moz-linear-gradient(top,#9CCECE 60%,#E7F7F7);
+	background:-o-linear-gradient(top,#9CCECE 60%,#E7F7F7);
+	background:-linear-gradient(top,#9CCECE 60%,#E7F7F7);
+}
+.cloud_near{position:absolute;z-index:12;
+	-webkit-animation:movenear 50s linear infinite;
+	-moz-animation:movenear 50s linear infinite;
+	animation:movenear 50s linear infinite;
+}
+.cloud_far{position:absolute;z-index:11;
+	-webkit-animation:movefar 70s linear infinite;
+	-moz-animation:movefar 70s linear infinite;
+	animation:movefar 70s linear infinite;
+}
 .fence{position:absolute;z-index:14;right:120px;width:60%;height:160px;bottom:40px;background:url(../img/fence.png) 0 0 repeat-x;}
 .tree{position:absolute;z-index:13;width:140%;height:300px;bottom:40px;background:url(../img/tree.png) 0 0 repeat-x;background-size:auto 100%;}
 .bush1{position:absolute;z-index:11;width:100%;height:290px;bottom:40px;background:url(../img/bush1.png) 0 0 no-repeat;background-size:auto 100%;}
 .bush2{position:absolute;z-index:17;width:400px;height:82px;bottom:20px;right:0px;background:url(../img/bush2.png) 0 0 no-repeat;background-size:100% 100%;}
-.birdsa{width:40px;height:40px;position:absolute;right:0;top:220px;
-	-webkit-animation:movea 10s linear infinite;
-}
 
-.bordsa_a{
-	width:40px;height:40px;background:blue;position:absolute;top:0;
-	background:url(../img/fly_a.png) 0 0 no-repeat;background-size:100% 70%;
-	-webkit-animation:movet 0.5s linear infinite alternate;
-}
+
 
 @-webkit-keyframes movenear{
+	0%{left:-100%;}
+	100%{left:100%;}
+}
+@-moz-keyframes movenear{
+	0%{left:-100%;}
+	100%{left:100%;}
+}
+@keyframes movenear{
 	0%{left:-100%;}
 	100%{left:100%;}
 }
@@ -36,15 +50,13 @@
 	0%{right:0%}
 	100%{right:100%;}
 }
-
-@-webkit-keyframes movea{
-	0%{left:0;}
-	100%{left:100%;}
+@-moz-keyframes movefar{
+	0%{right:0%}
+	100%{right:100%;}
 }
-
-@-webkit-keyframes movet{
-	0%{top:0px;}
-	100%{top:30px;}
+@keyframes movefar{
+	0%{right:0%}
+	100%{right:100%;}
 }
 
 

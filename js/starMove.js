@@ -76,3 +76,22 @@ function blindBtn(faParent,btn){
 		}
 	}
 }
+
+// 添加 blind
+
+function blindBtn(faParent,btn){
+	var a = true;
+	var oldw = faParent.offsetWidth;
+	btn.onclick=function(){
+		if(a){
+			starMove(faParent,{width:this.offsetWidth})
+			a = false;
+			console.log(a)
+		}
+		else if(!a){
+			starMove(faParent,{width:oldw})
+			a = true;
+		}
+	}
+}
+

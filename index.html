@@ -40,28 +40,14 @@
 
 </body>
 <script>
-
+window.onload=function(){
+	console.log(document.body.clientHeight + "|||" + document.documentElement.clientHeight)
+	console.log(window.screen.availHeight)
+}
 // nav 移动下标
 new add_navicon($('add_icon')).init();
 
 // 添加 blind
-
-function blindBtn(faParent,btn){
-	var a = true;
-	var oldw = faParent.offsetWidth;
-	btn.onclick=function(){
-		if(a){
-			starMove(faParent,{width:this.offsetWidth})
-			a = false;
-			console.log(a)
-		}
-		else if(!a){
-			starMove(faParent,{width:oldw})
-			a = true;
-		}
-	}
-}
-
 blindBtn($('header'),$('blind_nav'));
 
 </script>

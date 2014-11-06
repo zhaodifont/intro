@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="header" id="header">
-		<h1 class="bg_514 fl_l pos_ab row10"><a href="javascript:void(0)"><img src="img/zd_logo.png" alt=""></a></h1>
+		<h1 class="bg_514 pos_ab row10"><a href="javascript:void(0)"><img src="img/zd_logo.png" alt=""></a></h1>
 		<div class="nav pos_ab bg_514 row90" id="nav">
 			<div class="handle fl_r" id="blind_nav">
 				<span class="ft ft_recart ft_fff ft26" style="top:42px"></span>
@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-	<div class="container boxs">
+	<div class="container boxs" id="container">
 		<div class="cloud_near"><img src="img/clouds-near.png" alt="" /></div>
 		<div class="cloud_far"><img src="img/clouds-far.png" alt="" /></div>
 		<div class="fence"></div>
@@ -41,8 +41,8 @@
 </body>
 <script>
 window.onload=function(){
-	console.log(document.body.clientHeight + "|||" + document.documentElement.clientHeight)
-	console.log(window.screen.availHeight)
+	var a = document.body.clientHeight|| document.documentElement.clientHeight;
+	$('container').style.height = a + "px"
 }
 // nav 移动下标
 new add_navicon($('add_icon')).init();

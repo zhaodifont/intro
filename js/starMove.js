@@ -86,7 +86,6 @@ function blindBtn(faParent,btn){
 		if(a){
 			starMove(faParent,{width:this.offsetWidth})
 			a = false;
-			console.log(a)
 		}
 		else if(!a){
 			starMove(faParent,{width:oldw})

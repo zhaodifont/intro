@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/page.css">
 	<script src="js/starMove.js"></script>
 </head>
-<body>
+<body style="height:1200px;">
 	<div class="header" id="header">
 		<h1 class="bg_514 pos_ab row10"><a href="javascript:void(0)"><img src="img/zd_logo.png" alt=""></a></h1>
 		<div class="nav pos_ab bg_514 row90" id="nav">
@@ -29,6 +29,9 @@
 	</div>
 
 	<div class="container boxs" id="container">
+		<span class="welcome">
+			<em>w</em><em>e</em><em>l</em><em>c</em><em>o</em><em>m</em><em>e</em>
+		</span>
 		<div class="cloud_near"><img src="img/clouds-near.png" alt="" /></div>
 		<div class="cloud_far"><img src="img/clouds-far.png" alt="" /></div>
 		<div class="fence"></div>
@@ -40,7 +43,7 @@
 
 </body>
 <script>
-window.onload=function(){
+window.onload=window.onresize = function(){
 	var a = document.body.clientHeight|| document.documentElement.clientHeight;
 	$('container').style.height = a + "px"
 }
@@ -50,5 +53,9 @@ new add_navicon($('add_icon')).init();
 // 添加 blind
 blindBtn($('header'),$('blind_nav'));
 
+alert(getClass())
+function addClass(obj,a){
+
+}
 </script>
 </html>

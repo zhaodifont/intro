@@ -1,5 +1,5 @@
 body,ul,li,h1,h2,h3,h4,img{margin:0;padding:0;font-size:100%;}
-body{font-family:arial;font-size:14px;overflow:hidden;}
+body{font-family:arial;font-size:14px;}
 li{list-style:none;}
 img{border:none;vertical-align:top}
 a{text-decoration:none;color:inherit;}
@@ -23,6 +23,7 @@ a{text-decoration:none;color:inherit;}
 .row70{width:70%;}
 .row80{width:80%;}
 .row90{width:90%;}
+.row100{width:100%;}
 
 
 

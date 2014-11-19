@@ -80,6 +80,10 @@ function blindBtn(faParent,btn){
 // 添加 blind
 
 function getClass(sClass,obj){
-
+	var arr = [],allTag = obj?obj.getElementsByTagName('*'):document.getElementsByTagName('*');
+	for (var i = 0; i < allTag.length; i++) {
+		arr.push(allTag[i])
+	}
+	return arr;
 }
 

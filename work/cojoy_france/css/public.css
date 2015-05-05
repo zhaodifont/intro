@@ -1,0 +1,95 @@
+@charset 'utf-8';
+
+body,button,input,h1,h2,h3,h4,h5,ul,li,em,var,i,b,p,table,tr,td{margin:0;padding:0;}
+body,button,input{font:normal 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,var{font-style:normal;vertical-align:middle;}
+li{list-style:none;}
+img{border:none;vertical-align:middle;}
+.box{box-sizing:border-box;}
+.clear{clear:both;height:0;overflow:hidden;line-height:0;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:"";clear:both;display:block;height:0;line-height:0;}
+a{text-decoration:none;color:inherit;}
+input[type="text"]:focus,div:focus{outline:none}
+table{border-collapse:collapse;border-spacing:0}
+
+.emp0{height:0px!important;}
+.emp5{height:5px;}
+.emp10{height:10px;}
+.emp20{height:20px;}
+.emp25{height:25px;}
+.emp30{height:30px;}
+.emp48{height:48px;}
+
+.f_l{float:left;display:inline;}
+.f_r{float:right;display:inline;}
+
+.ft12{font-size:12px!important;}
+.ft14{font-size:14px!important;}
+.ft16{font-size:16px!important;}
+.ft18{font-size:18px!important;}
+.ft20{font-size:20px!important;}
+
+.bg_fff{background-color:#fff;}
+.bg_1e2{background-color:#1e2127;}
+.bg_e5e{background-color:#e5e9ec;}
+
+
+.rad_2{border-radius:2px;overflow:hidden;}
+.rad_4{border-radius:4px;overflow:hidden;}
+.rad_circle{border-radius:50%}
+
+.c_f{color:#fff;}
+.c_6267{color:#626776;}
+.c_ff68{color:#ff684e;}
+.c_63ba{color:#63bae2;}
+.c_00b6{color:#00b6ad;}
+.c_994f{color:#994fd7;}
+
+
+@font-face {
+  font-family: 'myfont-style';
+  src: url('../font/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../font/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('../font/fontawesome-webfont.woff') format('woff'),
+  url('../font/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('../font/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa:empty{width:1em;height:1em;}
+.fa{position:relative;top:1px;z-index:1;display:inline-block;font-family:'myfont-style';-webkit-font-smoothing:antialiased;font-style:normal;font-weight:normal;line-height:1;-moz-osx-font-smoothing:grayscale}
+
+.fa_calendar:before{content:"\f073";}
+.fa_gear:before{content:"\f013";}/*齿轮*/
+.fa_user:before{content:"\f007";}
+.fa_sign_out:before{content:"\f08b";}
+.fa_list:before{content:"\f03a";}
+.fa_plus_square:before{content:"\f0fe";}
+.fa_circle_o:before{content:"\f10c";}
+.fa_chevron_right:before{content:"\f054";}
+.fa_search:before{content:"\f002";}
+.fa_edit:before{content:"\f044";}
+.fa_trash:before{content:"\f1f8";}
+.fa_sort_up:before{content:"\f0de";}
+.fa_sort_down:before{content:"\f0dd";}
+.fa_close:before{content:"\f00d";}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

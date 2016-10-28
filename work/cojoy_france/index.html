@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Cojoy France</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/pages.css">
+
+	<script src="js/jq.js"></script>
+</head>
+<body>
+	<div class="head bg_1e2">
+		<h1 class="f_l"><a href="javascript:void(0)"><img src="img/logo.svg" alt=""></a></h1>
+		<div class="users f_r c_f ft16"><font>李婕</font>　<a href="javascript:void(0)" class="fa fa_sign_out ft20"></a></div>
+	</div>
+
+	<div class="content">
+		<div class="nav_a bg_fff">
+			<ul>
+				<li>
+					<a href="index.html" class="a_active">
+						<i class="fa fa_list f_l"></i> 列表
+						<i class="fa fa_chevron_right f_r"></i>
+					</a>
+				</li>
+				<li>
+					<a href="add.html">
+						<i class="fa fa_plus_square f_l"></i> 新增
+						<i class="fa fa_chevron_right f_r"></i>
+					</a>
+				</li>
+				<li>
+					<a href="record.html">
+						<i class="fa fa_calendar f_l" style="top:2"></i> 记录
+						<i class="fa fa_chevron_right f_r"></i>
+					</a>
+				</li>
+				<li>
+					<a href="string.html">
+						<i class="fa fa_gear f_l"></i> 字段
+						<i class="fa fa_chevron_right f_r"></i>
+					</a>
+				</li>
+				<li>
+					<a href="account.html">
+						<i class="fa fa_user f_l"></i> 帐号
+						<i class="fa fa_chevron_right f_r"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="fixeda">
+				<p class="c_ff68">
+					<font class='ft14'><i class="fa fa_circle_o"></i>总额</font><br/>
+					3050,000.00
+				</p>
+				<p class="c_63ba">
+					<font class='ft14'><i class="fa fa_circle_o"></i>已收</font><br/>
+					3050,000.00
+				</p>
+				<p class="c_00b6">
+					<font class='ft14'><i class="fa fa_circle_o"></i>未收</font><br/>
+					3050,000.00
+				</p>
+				<p class="c_994f">
+					<font class='ft14 box'><i class="fa fa_circle_o"></i>支出</font><br/>
+					3050,000.00
+				</p>
+			</div>
+		</div>
+		<div class="nav_b bg_e5e">
+
+			<div class="nav_b_section" style="display:block">
+				<div class="nav_b_t ft16">操作</div>
+				<ul>
+					<li><a href="javascript:void(0)" class="b_active">全部</a></li>
+					<li><a href="javascript:void(0)">已付款</a></li>
+					<li><a href="javascript:void(0)">已开票</a></li>
+					<li><a href="javascript:void(0)">已签合同</a></li>
+					<li><a href="javascript:void(0)">未签合同</a></li>
+				</ul>
+
+				<div class="search">
+					<input type="text" />
+					<a href="javascript:void(0)" class="fa fa_search"></a>
+				</div>
+			</div>
+<!-- 
+			<div class="nav_b_section">
+				<div class="nav_b_t ft16">条目</div>
+				<ul class=ul_a>
+					<li>项目编号</li>
+					<li>项目名称</li>
+					<li>项目金额</li>
+					<li>税金3%</li>
+					<li>名称</li>
+					<li>项目状态</li>
+					<li>项目经理</li>
+					<li>支出</li>
+				</ul>
+			</div>
+
+			<div class="nav_b_section">
+				<div class="nav_b_t ft16">？？</div>
+			</div>
+
+			<div class="nav_b_section">
+				<div class="nav_b_t ft16">条目</div>
+				<ul class=ul_a>
+					<li>公司字段</li>
+				</ul>
+			</div>
+
+			<div class="nav_b_section">
+				<div class="nav_b_t ft16">条目</div>
+				<ul class=ul_a>
+					<li>帐号列表</li>
+				</ul>
+			</div>
+			 -->
+		</div>
+		<div class="cont_in">
+
+				<!-- 列表 -->
+			<div class="cont_in_section" >
+				<div class="cont_in_1top"></div>
+				<div class="cont_in_1">
+					<table>
+						<tr><th>编号</th><th>项目名称</th><th>项目金额</th><th>支出金额</th><th>公司</th><th>状态</th><th>操作</th></tr>
+						<tr><td>150001</td><td><a href="javascript:void(0)">美赞臣魏来谈</a></td><td><span class="c_ff68">¥ <font>330,000.00</font></span></td><td><span class="c_994f">¥ <font>330,000.00</font></span></td><td>北京蓝标</td><td></td><td class="ft16">del</td></tr>
+						<tr><td>150001</td><td><a href="javascript:void(0)">美赞臣魏来谈</a></td><td><span class="c_ff68">¥ <font>330,000.00</font></span></td><td><span class="c_994f">¥ <font>330,000.00</font></span></td><td>北京蓝标</td><td></td><td class="ft16">del</td></tr>
+						<tr><td>150001</td><td><a href="javascript:void(0)">美赞臣魏来谈</a></td><td><span class="c_ff68">¥ <font>330,000.00</font></span></td><td><span class="c_994f">¥ <font>330,000.00</font></span></td><td>北京蓝标</td><td></td><td class="ft16">del</td></tr>
+					</table>
+
+					<!-- 隐藏模版 -->
+					<div style="height:0;line-height:0;position:relative;overflow:hidden;">
+						<span class="edit_b">
+							<a href="javascript:void(0)" class="fa fa_edit" style="top:2px"></a>&nbsp;
+							<a href="javascript:void(0)" class="fa fa_trash"></a>
+						</span>
+						<span class="edit_a">
+							未付款 <a href="javascript:void(0)" class="fa fa_edit c_ff68 show_list"></a>
+						</span>
+						<div class="editc_t">
+							<div class="edit_c">
+								<i class="fa fa_sort_up"></i>
+								<a href="javascript:void(0)">已付款</a>
+								<a href="javascript:void(0)">已开票</a>
+								<a href="javascript:void(0)">未签合同</a>
+								<a href="javascript:void(0)" class="datetimepicker9">已签合同</a>
+							</div>
+						</div>
+
+						<input type="text" value="2014.12.24" class="datetimepicker9">
+					</div>
+					
+				</div>
+			</div>
+
+				<!-- 新增 -->
+			<div class="cont_in_section" style="display:none;">
+				<div class="cont_in_1top">新增项目</div>
+					<div class="emp20"></div>
+				<div class="cont_in_2">
+					<table>
+						<tr>
+							<td><input type="text" value="15001" class="readonly" disabled style="width:394px"></td>
+						</tr>
+						<tr>
+							<td><input type="text" value="" style="width:394px"></td>
+						</tr>
+						<tr>
+							<td><input type="text" value="￥ " style="width:394px"></td>
+						</tr>
+						<tr>
+							<td><input type="text" value="￥3000" class="readonly" disabled></td>
+						</tr>
+						<tr>
+							<td>
+								<!-- <select name="" id="">
+									<option value="">北京蓝标</option>
+									<option value="">北京蓝标</option>
+								</select> -->
+								<div class="select">
+									<div class="select_show">
+										<span>北京蓝标</span><a href="javascript:void(0)" class="fa fa_sort_down f_r ft20" style="top:1px;"></a>
+									</div>
+									<div class="select_list" style="display:none">
+										<a href="javascript:void(0)">北京蓝标1</a>
+										<a href="javascript:void(0)">北京蓝标3</a>
+										<a href="javascript:void(0)">北京蓝标2</a>
+										<a href="javascript:void(0)">北京蓝标4</a>
+										<a href="javascript:void(0)">北京蓝标6</a>
+									</div>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td class="select_data">
+								<a href="javascript:void(0)" class="active allow">未签合同</a><a href="javascript:void(0)" class="allow">已签合同</a>
+								<a href="javascript:void(0)" class="allow"><span>已开票</span> <input type="text" value="2015.02.22" class="select_datapicker" readonly/></a>
+								<a href="javascript:void(0)"class="allow"><span>已付款</span> <input type="text" value="2015.02.22" class="select_datapicker" readonly/></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="select">
+									<div class="select_show">
+										<span>李捷</span><a href="javascript:void(0)" class="fa fa_sort_down f_r ft20" style="top:1px;"></a>
+									</div>
+									<div class="select_list" style="display:none">
+										<a href="javascript:void(0)">李捷</a>
+										<a href="javascript:void(0)">娃娃</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" value="￥">
+								<div class="select" style="display:inline-block;width:150px">
+									<div class="select_show">
+										<span>外包</span><a href="javascript:void(0)" class="fa fa_sort_down f_r ft20" style="top:1px;"></a>
+									</div>
+									<div class="select_list" style="display:none">
+										<a href="javascript:void(0)">外包</a>
+										<a href="javascript:void(0)">娃娃</a>
+									</div>
+								</div>
+								<input type="text" value="请输入外包名字" class="focu_emp">
+								&nbsp;<a href="javascript:void(0)" class="fa fa_close ft16"></a>
+							</td>
+						</tr>
+					</table>
+					<div class="emp10"></div>
+					<a href="javascript:void(0)" class="ft14" style="color:#9facb8">
+						<i class="fa fa_plus_square ft16"></i> 增加支出
+					</a>
+					<div class="emp30"></div>
+					<div class="cont_in_2_b">
+						<a href="javascript:void(0)">提交项目</a>
+						<a href="javascript:void(0)" style="background-color:#9facb8">取消</a>
+					</div>
+				</div>
+			</div>
+
+				<!-- 记录 -->
+			<div class="cont_in_section" style="display:none;">
+				<div class="cont_in_1top">暂无数据</div>
+			</div>
+
+			<div class="cont_in_section" style="display:none;">
+				<div class="cont_in_1top">登陆码</div>
+				<div class="cont_in_5">
+					<div class="emp25"></div>
+					<input type="text" value="北京蓝标">
+					<input type="text" value="大街网">
+					<input type="text" value="搜狐">
+					<input type="text" value="腾讯">
+
+					<div class="emp10"></div>
+					<a href="javascript:void(0)" class="ft14" style="color:#9facb8">
+						<i class="fa fa_plus_square ft16"></i> 增加帐号
+					</a>
+					<div class="emp30"></div>
+					<div class="cont_in_2_b">
+						<a href="javascript:void(0)">提交</a>
+						<a href="javascript:void(0)" style="background-color:#9facb8">取消</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont_in_section" style="display:none;">
+				<div class="cont_in_1top">字段管理</div>
+				<div class="cont_in_4">
+					<div class="emp25"></div>
+					<input type="password" value="123124123">
+					<input type="text" value="李捷">
+					&nbsp;<a href="javascript:void(0)" class="fa fa_close ft16"></a>
+					<div class="emp10"></div>
+					<a href="javascript:void(0)" class="ft14" style="color:#9facb8">
+						<i class="fa fa_plus_square ft16"></i> 增加帐号
+					</a>
+					<div class="emp30"></div>
+					<div class="cont_in_2_b">
+						<a href="javascript:void(0)">提交</a>
+						<a href="javascript:void(0)" style="background-color:#9facb8">取消</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script src="datetimepicker/datetimepicker.js"></script>
+<link rel="stylesheet" href="datetimepicker/datetimepicker.css">
+<script src="js/jquery.confirm.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.confirm.css" />
+<script src="js/page.js"></script>
+
+</html>

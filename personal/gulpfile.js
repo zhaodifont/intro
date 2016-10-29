@@ -44,7 +44,7 @@ gulp.task('sass', function() {
 gulp.task('css',['sass'], function() {
   del(distCssSrc + '**/*.min.css');
   return gulp.src(cssSrc)
-    .pipe(cached('css'))
+    // .pipe(cached('css'))
     .pipe(concat('a.css'))
     .pipe(gulp.dest(distCssSrc));
 });
@@ -61,7 +61,7 @@ gulp.task('concatcss',['css'],function(){
 // image
 gulp.task('image', function() {
   gulp.src(imgSrc)
-    // .pipe(cached('image'))
+    .pipe(cached('image'))
     .pipe(imagemin())
     .pipe(gulp.dest(distImgSrc));
 });
@@ -117,6 +117,6 @@ gulp.task('watch', function() {
   // 监控 html 文件，有变动则执行 html 任务
   // gulp.watch('src/**/*.html', ['html']);
   // 监控 dist 目录下除 css 目录以外的变动（如js，图片等），则自动刷新页面
-  gulp.watch(['app/dist/**/*', '!app/dist/css/**/*']).on('change', browserSync.reload);
+  gulp.watch(['dist/**/*', '!dist/css/**/*']).on('change', browserSync.reload);
  
 });

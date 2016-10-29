@@ -5,6 +5,9 @@ $('#container').fullpage({
 	navigation: true,
 	css3:true,
 	loopHorizontal:false,
+	'navigation': true,
+	anchors: ['page1', 'page2'],
+	menu: '#menu',
     afterLoad: function(anchorLink, index){
 
 	},

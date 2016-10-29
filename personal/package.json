@@ -1,8 +1,8 @@
 {
-  "name": "personal",
+  "name": "zd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,18 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.17.5",
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
+    "cross-spawn": "^4.0.2",
+    "gifsicle": "^3.0.4",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-cached": "^1.1.0",
-    "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-filter": "^4.0.0",
-    "gulp-imagemin": "^3.1.0",
+    "gulp-imagemin": "^3.0.3",
     "gulp-jshint": "^2.0.2",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
+    "jpegtran-bin": "^3.1.0",
     "jshint": "^2.9.4"
   }
 }

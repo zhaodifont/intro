@@ -23,7 +23,7 @@ var gulp = require('gulp'), // 必须先引入gulp插件
 
 //基础变量
 
-var basePath = './app/',
+var basePath = 'E:/wamp1/www/intro/personal/',
     cssSrc = basePath + 'src/css/*.css',
     distCssSrc = basePath + 'dist/css/',
     sassSrc = basePath + 'src/css/*.scss',
@@ -60,10 +60,10 @@ gulp.task('concatcss',['css'],function(){
 
 // image
 gulp.task('image', function() {
-  return gulp.src(imgSrc)
-    .pipe(cached('image'))
-    .pipe(imagemin({optimizationLevel: 3, progressive: true, interlaced: true, multipass: true}))
-    .pipe(gulp.dest(distImgSrc))
+  gulp.src(imgSrc)
+    // .pipe(cached('image'))
+    .pipe(imagemin())
+    .pipe(gulp.dest(distImgSrc));
 });
 // script （拷贝 *.min.js，常规 js 则输出压缩与未压缩两个版本）
 gulp.task('script', function() {

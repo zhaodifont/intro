@@ -56,7 +56,7 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
 	-ms-animation-fill-mode: forwards;
 }
 .tree{position:absolute;z-index:13;width:140%;height:600px;bottom:-260px;background:url(../img/tree.png) 0 0 repeat-x;background-size:auto 50%;
-	-webkit-transform:skewX(90deg);
+	/*-webkit-transform:skewX(90deg);
 	-moz-transform:skewX(90deg);
 	-ms-transform:skewX(90deg);
 
@@ -66,13 +66,13 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
 
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;*/
 
 }
 .bush1{position:absolute;z-index:11;width:100%;height:290px;bottom:40px;background:url(../img/bush1.png) 0 0 no-repeat;background-size:auto 100%;
-	-webkit-animation:mymove_bush 3s 2s;
+	/*-webkit-animation:mymove_bush 3s 2s;
 	-moz-animation:mymove_bush 3s 2s;
-	-ms-animation:mymove_bush 3s 2s;
+	-ms-animation:mymove_bush 3s 2s;*/
 }
 .bush2{position:absolute;z-index:17;width:400px;height:82px;bottom:20px;right:0px;background:url(../img/bush2.png) 0 0 no-repeat;background-size:100% 100%;
 	-webkit-animation:mymove_bush 3s 2s;

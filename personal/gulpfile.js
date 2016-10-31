@@ -23,7 +23,7 @@ var gulp = require('gulp'), // 必须先引入gulp插件
 
 //基础变量
 
-var basePath = 'E:/wamp1/www/intro/personal/',
+var basePath = 'D:/wamp/www/intro/personal/',
     cssSrc = basePath + 'src/css/*.css',
     distCssSrc = basePath + 'dist/css/',
     sassSrc = basePath + 'src/css/*.scss',

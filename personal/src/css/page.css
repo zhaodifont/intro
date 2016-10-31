@@ -37,6 +37,7 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;font:16px/1
 .section{padding:0 5%;}
 .section1{overflow:hidden;z-index:13;top:0;height:100%;
 	perspective:600;-webkit-perspective:600;-moz-perspective:600;-ms-perspective:600;
+	background-color:#9CCECE;
 	background:-webkit-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 	background:-moz-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 	background:-o-linear-gradient(top,#9CCECE 60%,#E7F7F7);

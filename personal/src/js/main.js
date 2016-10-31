@@ -17,7 +17,7 @@ $('#container').fullpage({
 	css3:true,
 	loopHorizontal:false,
 	// 'navigation': true,
-	anchors: ['page1', 'page2'],
+	anchors: ['page1', 'page2', 'page3'],
 	menu: '#menu',
     afterLoad: function(anchorLink, index){
     	if(index == 1){
@@ -30,6 +30,9 @@ $('#container').fullpage({
     	}
 	},
 	onLeave: function(index, direction){
+		if(index == 1){
+    		$('.welcome span').removeClass();
+    	}
 		if(index == 2){
 			$('.section2 .left span,.section2 .right>div').removeClass().animate({'opacity':0},'300');
 		}

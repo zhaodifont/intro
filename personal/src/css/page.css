@@ -26,6 +26,7 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;font:16px/1
 	background: #629256;
 	opacity: 0;
 	-webkit-transition: .6s ease-in;
+	-o-transition: .6s ease-in;
 	transition: .6s ease-in;
 }
 
@@ -33,27 +34,25 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;font:16px/1
 .handle{border-left:1px solid #675f5d;height:105px;padding:0 30px;color:#fff;cursor:pointer;}
 .lit_a{width:12px;height:7px;background:url(../img/lit_a.png) center top no-repeat;background-size:100%;position:absolute;bottom:0;left:0;}
 
-.section{padding:0 10%;}
+.section{padding:0 5%;}
 .section1{overflow:hidden;z-index:13;top:0;height:100%;
 	perspective:600;-webkit-perspective:600;-moz-perspective:600;-ms-perspective:600;
+	background-color:#9CCECE;
 	background:-webkit-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 	background:-moz-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 	background:-o-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 	background:-linear-gradient(top,#9CCECE 60%,#E7F7F7);
 }
 
-.section2{
-	background:url(../img/bg-yellow.png) 0 0 repeat;
-}
-.st2_wrapper{
-	height:86%;padding-top:60px;
-}
-.st2_wrapper .left{
-	width: 24%
-}
-.st2_wrapper .left span{
-	display:block;width:100%;border-radius:50%;overflow: hidden
-}
+.section2{background:url(../img/bg-yellow.png) 0 0 repeat;}
+.st2_wrapper{height:88%;padding-top:60px;}
+.st2_wrapper .left{width: 24%;}
+.st2_wrapper .left span{display:block;width:100%;border-radius:50%;overflow: hidden;opacity:0;}
+.st2_wrapper .right{width: 72%;height:100%;}
+.st2_wrapper .right>div{background-color: rgba(137,123,138,0.6);border-radius: 14px;overflow: hidden;opacity:0;}
+.st2_wrapper .right table{margin:5% 0 5% 5%;width: 100%;}
+.st2_wrapper .right table td{font-size:18px;line-height:32px;color:#444;text-indent: 1em}
+.st2_wrapper .right table td.td1{text-align: right;width:15%;color:#d42306;text-indent: 0}
 .cloud_near{position:absolute;z-index:12;top:0;
 	-webkit-animation:movenear 80s linear infinite;
 	-moz-animation:movenear 80s linear infinite;
@@ -65,19 +64,10 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;font:16px/1
 	animation:movefar 70s linear infinite;
 }
 
-/*fill-mode*/
-.fll_mode{
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-}
 
-
-.welcome{position:absolute;right:50%;margin-right:-169px;z-index:222;top:26%;font-size:80px;color:#fff;font-weight:bold;font-style:normal;
-	
-}
-.welcome:hover{
-
+.welcome{position:absolute;right:50%;margin-right:-169px;z-index:222;top:26%;}
+.welcome span{
+	font-size:80px;color:#fff;font-weight:bold;font-style:normal;display:block;
 }
 
 .fence{position:absolute;z-index:14;width:60%;height:100px;bottom:40px;right:40px;background:url(../img/fence.png) 0 0 repeat-x;

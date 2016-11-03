@@ -55,7 +55,7 @@ body{-moz-user-select:none;-webkit-user-select:none;user-select:none;font:16px/1
 .st2_wrapper .right table td.td1{text-align: right;width:15%;color:#d42306;text-indent: 0}
 
 .section3{background:url(../img/bg-yellow.png) 0 0 repeat;}
-.section3 .fp-tableCell>div{margin-top:60px;position:relative;opacity:0;}
+.section3 .fp-tableCell>div{position:relative;opacity:0;}
 .section3 .swiper-container{width:80%;margin:auto;min-width:810px;}
 .section3 .swiper-slide{background-color:#d5d3d3;overflow: hidden;box-sizing:border-box;padding:20px 20px 40px 30px;border-radius: 12px;}
 .section3 .swiper-slide .wrapper{display:table;width: 100%}

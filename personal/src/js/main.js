@@ -17,7 +17,7 @@ $('#container').fullpage({
 	css3:true,
 	loopHorizontal:false,
 	// 'navigation': true,
-	anchors: ['page1', 'page2', 'page3'],
+	anchors: ['page1', 'page2', 'page3', 'page4'],
 	menu: '#menu',
     afterLoad: function(anchorLink, index){
     	if(index == 1){
@@ -28,6 +28,9 @@ $('#container').fullpage({
     			Anim($('.section2 .right>div'),'bounceInRight')
     		})
     	}
+    	if(index == 3){
+    		Anim($('.section3 .fp-tableCell>div'),'bounceInUp')
+    	}
 	},
 	onLeave: function(index, direction){
 		if(index == 1){
@@ -36,9 +39,20 @@ $('#container').fullpage({
 		if(index == 2){
 			$('.section2 .left span,.section2 .right>div').removeClass().animate({'opacity':0},'300');
 		}
+		if(index == 2){
+			$('.section3 .fp-tableCell>div').removeClass().animate({'opacity':0},'300');
+		}
 		
 	}
 });
 
+ var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    speed:800
+});
 
 }

@@ -57,7 +57,7 @@ $('#container').fullpage({
 
  //load
     $(function(){
-        var aImgs = document.querySelectorAll('.load_img img'),
+        var aImgs = document.querySelectorAll('body img'),
         mx_length = Math.ceil(aImgs.length*0.6);
 
         function loadnext(num){

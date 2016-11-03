@@ -8,7 +8,7 @@ function Anim(obj,x,fallback){
 	  if(fallback)fallback();
 	});
 };
-Anim($('.welcome span'),'hinge');
+
 
 $('#container').fullpage({
 	scrollingSpeed:800,
@@ -64,6 +64,7 @@ $('#container').fullpage({
                     this.removeAttribute('data-src');
                     if(num+1 == mx_length){
                         $('#load').remove();
+                        Anim($('.welcome span'),'hinge');
                     }
                 }else{
                     loadnext = null;

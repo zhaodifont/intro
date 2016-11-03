@@ -8,7 +8,7 @@ function Anim(obj,x,fallback){
 	  if(fallback)fallback();
 	});
 };
-Anim($('.welcome span'),'bounceInDown');
+Anim($('.welcome span'),'hinge');
 
 $('#container').fullpage({
 	scrollingSpeed:800,
@@ -20,9 +20,7 @@ $('#container').fullpage({
 	anchors: ['page1', 'page2', 'page3', 'page4'],
 	menu: '#menu',
     afterLoad: function(anchorLink, index){
-    	if(index == 1){
-    		Anim($('.welcome span'),'bounceIn');
-    	}
+    	
     	if(index == 2){
     		Anim($('.section2 .left span'),'flipInX',function(){
     			Anim($('.section2 .right>div'),'bounceInRight')
@@ -33,9 +31,7 @@ $('#container').fullpage({
     	}
 	},
 	onLeave: function(index, direction){
-		if(index == 1){
-    		$('.welcome span').removeClass();
-    	}
+		
 		if(index == 2){
 			$('.section2 .left span,.section2 .right>div').removeClass().animate({'opacity':0},'300');
 		}

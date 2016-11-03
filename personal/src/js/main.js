@@ -55,4 +55,28 @@ $('#container').fullpage({
     speed:800
 });
 
+ //load
+    $(function(){
+        var aImgs = document.querySelectorAll('.load_img img'),
+        mx_length = Math.ceil(aImgs.length*0.6);
+
+        function loadnext(num){
+            aImgs[num].setAttribute('src',aImgs[num].getAttribute('data-src'));
+            aImgs[num].onload=function(){
+                if(num + 1 < aImgs.length){
+                    loadnext(num+1);
+                    this.removeAttribute('data-src');
+                    if(num+1 == mx_length){
+                        $('#load').remove();
+                    }
+                }else{
+                    loadnext = null;
+                }
+                $('.myloadText font').width(Math.round((num+1)/mx_length*100)+'%');
+            }
+        }
+        loadnext(0)
+    })
+
+
 }

@@ -1,4 +1,5 @@
 body,ul,li,h1,h2,h3,h4,img,p{margin:0;padding:0;font-size:100%;}
+em,var{font-style: normal;}
 li{list-style:none;}
 img{border:none;}
 a{text-decoration:none;color:inherit;}
@@ -9,6 +10,8 @@ a{text-decoration:none;color:inherit;}
 .p_a{position:absolute;}
 .boxs{box-sizing:border-box;}
 .cur_po{cursor:pointer;}
+.clearfix{display:block;}
+.clearfix:after{content:'';display:block;clear:both;overflow: hidden;line-height: 0;}
 
 /*bg_color*/
 

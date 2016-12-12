@@ -7492,7 +7492,7 @@
 /* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -7510,10 +7510,14 @@
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'history',
+
+	  componentDidMount: function componentDidMount() {
+	    $('.history').fadeIn();
+	  },
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'section section3' },
+	      { className: 'history section3' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'st3_wrapper' },
@@ -7625,6 +7629,7 @@
 	    );
 	  }
 	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
 /* 72 */
@@ -7886,11 +7891,13 @@
 
 	exports.default = _react2.default.createClass({
 	  displayName: "other",
+
+
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "div",
 	      { className: "other" },
-	      "other"
+	      "\u7559\u8A00\u677F"
 	    );
 	  }
 	});

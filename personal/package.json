@@ -4,8 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "start": "webpack-dev-server --progress --hot --port 8080 --host 0.0.0.0 --inline --content-base dist/ --history-api-fallback"
+    "clean": "rimraf dist/*",
+    "dev-build":"rimraf dist/* && set NODE_ENV=development && webpack",
+    "dev-start": "set NODE_ENV=development && webpack-dev-server --progress --hot --port 8080 --host 0.0.0.0 --inline --content-base dist/ --history-api-fallback",
+    "pro-build":"rimraf build/* && set NODE_ENV=production && webpack",
+    "pro-start": "set NODE_ENV=production && webpack-dev-server --progress --hot --port 8080 --host 0.0.0.0 --inline --content-base build/ --history-api-fallback"
   },
   "author": "",
   "license": "ISC",

@@ -1,10 +1,18 @@
 var path = require('path');
 var webpack = require('webpack');
 
-var app_path = path.resolve(__dirname,'app');
-var dist_path = path.resolve(__dirname,'dist');
-var node_modules_dir = path.resolve(__dirname,'node_modules');
+// 开发环境
+var isDev = function() {
+  return process.env.NODE_ENV.trim() === 'development';
+};
+// 生产环境
+var isProd = function() {
+  return process.env.NODE_ENV.trim() === 'production';
+};
 
+var app_path = path.resolve(__dirname,'app');
+var dist_path = isDev()?path.resolve(__dirname,'dist'):path.resolve(__dirname,'build');
+var node_modules_dir = path.resolve(__dirname,'node_modules');
 // var OpenBrowserPlugin = require('open-browser-webpack-plugin');//webpack插件
 // var CleanPlugin = require('clean-webpack-plugin')//webpack插件，用于清除目录文件
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -16,6 +24,7 @@ var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 
 
+
 module.exports = {
   entry:{
     'main':path.resolve(app_path,'main.js'),
@@ -23,7 +32,7 @@ module.exports = {
   output:{
     path:path.resolve(dist_path),
     filename:'static/js/[name].js',
-    publicPath:'/intro/personal/dist/'
+    publicPath:isDev()?'/intro/personal/dist/':'/intro/personal/build/'
   },
   resolve:{
     extensions:['','.js','.jsx'],
@@ -70,7 +79,11 @@ module.exports = {
   postcss:function(){
     return [autoprefixer,cssnext,precss,cssnano]
   },
-  plugins:[
+  plugins:getPlugins(),
+}
+
+function getPlugins(){
+  var plugins = [
     new ExtractTextPlugin('static/css/pages.css?[hash:4]'),
     new webpack.ProvidePlugin({
       $:'zepto',
@@ -89,6 +102,21 @@ module.exports = {
     // new CleanPlugin(['dist', 'build']),
     // new webpack.HotModuleReplacementPlugin(),
     // new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+  ];
 
-  ],
+  if (isProd()) {
+    plugins.push(
+      new webpack.optimize.UglifyJsPlugin({
+        minimize: true,
+        output: {
+          comments: false,
+        },
+        compress: {
+          warnings: false
+        }
+      })
+    );
+  }
+  return plugins;
 }
+console.log(module.exports.plugins + '________')

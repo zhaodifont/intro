@@ -23,7 +23,7 @@ module.exports = {
   output:{
     path:path.resolve(dist_path),
     filename:'static/js/[name].js',
-    publicPath:'/'
+    publicPath:'/intro/personal/dist/'
   },
   resolve:{
     extensions:['','.js','.jsx'],

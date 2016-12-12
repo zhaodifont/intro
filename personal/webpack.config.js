@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: 'url-loader?limit=8192&name=static/[hash:6].[ext]',
+        loader: 'url-loader?limit=8192&name=./static/img/[hash:6].[ext]',
       },
       // {
       //   test: require.resolve('zepto'),  // 此loader配置项的目标是NPM中的jquery

@@ -7108,7 +7108,7 @@
 	'use strict';
 
 	var data = {
-	  navlist: [{ name: '首页', path: '/index' }, { name: '关于我', path: '/about' }, { name: '工作经历', path: '/history' }, { name: '作品集', path: '/production' }, { name: '其他', path: '/other' }],
+	  navlist: [{ name: '首页', path: '/index' }, { name: '工作经历', path: '/history' }, { name: '作品集', path: '/production' }, { name: '关于我', path: '/about' }, { name: '其他', path: '/other' }],
 	  productions: [{}]
 	};
 

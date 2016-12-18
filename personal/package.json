@@ -5,9 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dev-build":"rimraf dist/* && set NODE_ENV=development && webpack",
+    "dev-build": "rimraf dist/* && set NODE_ENV=development && webpack",
     "dev-start": "set NODE_ENV=development && webpack-dev-server --progress --hot --port 8080 --host 0.0.0.0 --inline --content-base dist/ --history-api-fallback",
-    "pro-build":"rimraf build/* && set NODE_ENV=production && webpack",
+    "pro-build": "rimraf build/* && set NODE_ENV=production && webpack",
     "pro-start": "set NODE_ENV=production && webpack-dev-server --progress --hot --port 8080 --host 0.0.0.0 --inline --content-base build/ --history-api-fallback"
   },
   "author": "",
@@ -36,6 +36,8 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "redux-thunk": "^2.1.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
@@ -43,5 +45,9 @@
     "webpack-dev-server": "^1.16.2",
     "webpack-zepto": "0.0.1",
     "zepto": "^1.2.0"
+  },
+  "dependencies": {
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0"
   }
 }

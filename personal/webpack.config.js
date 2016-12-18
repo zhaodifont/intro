@@ -49,7 +49,7 @@ module.exports = {
     noParse:['react','react-dom','zepto'],
     loaders:[
       {
-        test:/\.jsx?$/,
+        test:/\.(js|jsx)$/,
         loader:'babel',
         exclude:/node_modules/,
         query:{
@@ -98,14 +98,16 @@ function getPlugins(){
       inject:true,
       chunks:['main']
     }),
-
     // new CleanPlugin(['dist', 'build']),
     // new webpack.HotModuleReplacementPlugin(),
     // new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
   ];
 
   if (isProd()) {
+    console.log('isProd' + '___'+ isProd() + '_____-')
     plugins.push(
+      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.OccurenceOrderPlugin(),
       new webpack.optimize.UglifyJsPlugin({
         minimize: true,
         output: {
@@ -119,4 +121,3 @@ function getPlugins(){
   }
   return plugins;
 }
-console.log(module.exports.plugins + '________')

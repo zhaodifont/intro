@@ -1,17 +1,17 @@
-body,ul,li,h1,h2,h3,h4,img{margin:0;padding:0;font-size:100%;}
-body{font-family:arial;font-size:14px;}
+body,ul,li,h1,h2,h3,h4,img,p{margin:0;padding:0;font-size:100%;}
+em,var{font-style: normal;}
 li{list-style:none;}
-img{border:none;vertical-align:top}
+img{border:none;}
 a{text-decoration:none;color:inherit;}
 
-
-.wi_au{width:auto;}
-.fl_l{float:left;}
-.fl_r{float:right;}
-.pos_re{position:relative;}
-.pos_ab{position:absolute;}
+.f_l{float:left;}
+.f_r{float:right;}
+.p_r{position:relative;}
+.p_a{position:absolute;}
 .boxs{box-sizing:border-box;}
 .cur_po{cursor:pointer;}
+.clearfix{display:block;}
+.clearfix:after{content:'';display:block;clear:both;overflow: hidden;line-height: 0;}
 
 /*bg_color*/
 

@@ -1,51 +1,204 @@
-<DOCTYPE HTML>
+<!doctype html>
 <html>
 <head>
 	<title>zhaodifont</title>
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" >
-	<link rel="stylesheet" href="src/css/base.css">
-	<link rel="stylesheet" href="src/css/page.css">
-	
+	<link rel="icon" href="dist/img/zd_logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="dist/css/zd.min.css">
+	<script src="http://cdn.neigou.com/app/b2c/neigou_statics/js/jquery-1.9.1.min.js"></script>
+	<!-- <script src="http://cdn.neigou.com/app/b2c/neigou_statics/js/jquery-ui.min.js"></script> -->
+	<script src="http://cdn.neigou.com/app/b2c/neigou_statics/js/jquery.fullPage.min.js"></script>
+
 </head>
 <body>
-	<div class="header" id="header">
-		<h1 class="bg_514 pos_ab row10">
-			<a href="javascript:void(0)"><img src="src/img/zd_logo.png" alt=""></a>
-		</h1>
-		<div class="nav pos_ab bg_514 row90" id="nav">
-			<div class="handle fl_r" id="blind_nav">
-				<span class="ft ft_recart ft_fff ft26" style="top:42px"></span>
-			</div>
-			<div class="fl_r pos_re" id="add_icon">
-				<!-- <div class="lit_a"></div> -->
-				<ul>
-					<li><a href="javascript:void(0)">首屏</a></li>
-					<li><a href="javascript:void(0)">关于我</a></li>
-					<li><a href="javascript:void(0)">工作经历</a></li>
-					<li><a href="javascript:void(0)">其他</a></li>
-				</ul>
+	<div id='load'>
+        <div class="myloadText">
+        	(&lt;^ω^&gt;)  git页面加载不稳定 请稍等一会儿...<br/>
+            <span class='p_r'><font class='p_a'></font></span>
+        </div>
+    </div>
+	<div id="header">
+		<div class="nav p_a bg_514 row90" id="nav">
+			<div class="wrapper icent">
+				<h1 class="bg_514 row10">
+					<a href="javascript:void(0)"><img data-src="dist/img/zd_logo.png" alt=""></a>
+				</h1>
+				<div class="fl_r pos_re" id="add_icon">
+					<ul id='menu'>
+						<li><a data-menuanchor="page1" href="#page1" class='active'>首页</a></li>
+						<li><a data-menuanchor="page2" href="#page2">关于我</a></li>
+						<li><a data-menuanchor="page3" href="#page3">工作经历</a></li>
+						<li><a data-menuanchor="page4" href="#page4">在线作品</a></li>
+						<li><a data-menuanchor="page5" href="#page5">其他</a></li>
+						<!-- <li><a href="javascript:void(0)">其他</a></li> -->
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container pos_re boxs row100 pages">
-		<span class="welcome">
-			<em>w</em><em>e</em><em>l</em><em>c</em><em>o</em><em>m</em><em>e</em>
-		</span>
-		<div class="cloud_near"><img src="src/img/clouds-near.png" alt="" /></div>
-		<div class="cloud_far"><img src="src/img/clouds-far.png" alt="" /></div>
-		<div class="fence"></div>
-		<div class="tree"></div>
-		<div class="bush1"></div>
-		<div class="bush2"></div>
-		<!-- <div class="birdsa"><div class="bordsa_a"></div></div> -->
-	</div>
+	<div id="container">
 
-	<div class="about pos_re boxs row100 pages">
+		<div class="section section1 p_r">
+			<div class="welcome">
+				<span>
+					<em>w</em><em>e</em><em>l</em><em>c</em><em>o</em><em>m</em><em>e</em>
+				</span>
+			</div>
+			<div class="cloud_near"><img data-src="dist/img/clouds-near.png" alt="" /></div>
+			<div class="cloud_far"><img data-src="dist/img/clouds-far.png" alt="" /></div>
+			<div class="fence"></div>
+			<div class="tree"></div>
+			<div class="bush2"></div>
+			<!-- <div class="birdsa"><div class="bordsa_a"></div></div> -->
+		</div><!-- st1 end -->
 
-	</div>
+		<div class="section section2">
+			<div class="st2_wrapper icent">
+				<div class="left">
+					<span><img data-src="dist/img/user.png" alt="" width='90%'></span>
+				</div>
+				<div class="right">
+					<div>
+						<table>
+							<tr>
+								<td class='td1'>姓名：</td><td>lvzhaodi</td>
+							</tr>
+							<tr>
+								<td class='td1'>出生年月：</td><td>1989-01-26</td>
+							</tr>
+							<tr>
+								<td class='td1'>职位：</td><td>前端攻城狮</td>
+							</tr>
+							<tr>
+								<td class='td1'>现住址：</td><td>北京通州</td>
+							</tr>
+							<tr>
+								<td class='td1'>邮箱：</td><td>524853114@qq.com</td>
+							</tr>
+							<tr>
+								<td class='td1'>学历：</td><td>本科</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div><!-- st2 end -->
+
+		<div class="section section3">
+			<div class="st3_wrapper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="wrapper">
+							<a href="http://www.zanzhu.com" target='_blank' class='company_logo'>
+								<img data-src="dist/img/zanzhu.png" alt="">
+							</a>
+							<div class="left">
+								<h3>2011.6 - 2014.7 北京活动邦科技有限公司</h3>
+								<p>
+									活动赞助网由北京活动邦科技有限公司于2011年4月发起创立。 活动赞助网是面向全国大学海量校园活动提供统合型、标准化赞助服务的专业平台。 活动赞助网的创立，让海量、多元的大学校园活动寻求高品质赞助变得容易、安全、成功率更高。
+									<span>
+										业务：主要与全国各大院校合作 校园活动及宣传 校园后台管理平台
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="wrapper">
+							<a href="http://www.neigou.com" target='_blank' class='company_logo'>
+								<img data-src="dist/img/neigou.png" alt="">
+							</a>
+							<div class="left">
+								<h3>2014.7- 2015.8 内购网</h3>
+								<p>
+									创始人蔡虎，内购网是国内第一个会员制电商,不同于传统电商的以商品为中心的卖货模式，内购网是通过以会员为中心的互联网技术与服务，为会员提供尽可能最低价格的高品质商品和电子商务服务，帮助会员更省钱省心地满足生活消费的需要。
+									<span>
+										业务：打造成熟的会员系统，高效的客服体系，PC与移动端的多终端对接，全面的数据统计。
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="wrapper">
+							<a href="http://www.gunlei.com" target='_blank' class='company_logo'>
+								<img data-src="dist/img/gunlei.png" alt="">
+							</a>
+							<div class="left">
+								<h3>2015.8- 2016.11 北京滚雷电子商务有限公司</h3>
+								<p>
+									滚雷进口车，来自美国最大的平行进口车供应商（Mayrock Group Inc.），为中国进口车经销商提供车辆选型、采购、仓储物流、3C认证、报关报检等一站式服务。提供尽可能最低价格的高品质商品和电子商务服务，帮助会员更省钱省心地满足生活消费的需要。
+									<span>
+										业务：Hybird app、pc端、m站、销售版、经销商版、采购版。
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+				<!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+			</div>
+		</div><!-- st3 end -->
+
+
+		<div class="section section4">
+			<div class="items clearfix">
+				<div class="item">
+					<a href="http://www.gunlei.com" target='_blank' class='gl'><span><em>滚雷</em>PC官网</span></a>
+				</div>
+				<div class="item">
+					<a href="http://m.gunlei.com" target='_blank' class='gl'><span><em>滚雷</em>m站</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.clippertrans.com/jsp/index.jsp" target='_blank' class='gl'><span><em>快船</em>PC</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.neigou.com/m" target='_blank' class='ng'><span><em>内购</em>m站</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.neigou.com/m/store-invitation.html" target='_blank' class='ng'><span><em>内购</em>HR 邀请函</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.neigou.com/m/store-partner.html" target='_blank' class='ng'><span><em>内购</em>热活疯人赛</span></a>
+				</div>
+				<div class="item">
+					<a href="http://zhaodifont.github.io/intro/work/albb/ " target='_blank' class='zb'><span><em>阿里巴巴</em>全球梦想家</span></a>
+				</div>
+				<div class="item">
+					<a href="http://zhaodifont.github.io/intro/work/jeep/" target='_blank' class='zb'><span><em>Jeep</em>未来之行</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.sklmg.edu.cn/" target='_blank' class='zz'><span><em>活动邦</em>中南大学</span></a>
+				</div>
+				<div class="item">
+					<a href="http://www.zanzhu.com/" target='_blank' class='zz'><span><em>活动邦</em>PC</span></a>
+				</div>
+
+
+			</div>
+			<div class="tip">
+				注: 移动端页面敬请在手机模式下看 托管在Git上的项目网速会很慢
+			</div>
+		</div>	<!-- sec4 -->
+
+
+		<div class="section section5">
+			正在用我的洪荒之力建设...
+		</div>
+
+
+	</div><!-- container end -->
 
 </body>
-<script src="src/js/page/bundle.js"></script>
+<script src="dist/js/commons.min.js"></script>
 </html>
